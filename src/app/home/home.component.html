@@ -1,0 +1,125 @@
+<!--CAROUSEL-->
+<div class="container" style="position: relative">
+  <app-carousel>Loading...</app-carousel>
+</div>
+<!--__________________________________________________________________________-->
+
+<!--FEATURE PRODUCTS START-->
+<div class="container-fluid d-flex flex-column align-items-center" id="featureDiv">
+  <h3 id="featProduct">Featured Products</h3>
+  <div class="d-flex justify-content-spaced" id="featureImgs">
+    <div>
+    <a routerLink="/product-page">
+      <img
+        class="img-fluid featureImg"
+        src="assets/img/featureimg.png"
+        alt="featureImage01"
+      />
+    </a>
+  </div>
+  <div>
+    <a routerLink="/product-page">
+      <img
+        class=" img-fluid featureImg"
+        src="assets/img/featureimg.png"
+        alt="featureImage02"
+      />
+      <br/>
+    </a>
+  </div>
+    <div>
+    <a routerLink="/product-page">
+      <img
+        class=" img-fluid featureImg"
+        src="assets/img/featureimg.png"
+        alt="featureImage03"
+      />
+      <br/>
+    </a>
+  </div>
+  </div>
+</div>
+<!--___________________________________FEATURE PRODUCTS ENDS____________________________________________-->
+
+<!--Filter Bar-->
+<hr class="filter-line container"/>
+<nav class="container d-flex product-filter">
+  <div class="sort">
+    <div class="collection-sort">
+      <label>Sort by:</label>
+      <select (change)="sortBy($event)">
+        <option value="featured">Featured</option>
+        <option value="l">Low to High</option>
+        <option value="h">High to Low</option>
+        <option value="a">A-Z</option>
+        <option value="z">Z-A</option>
+      </select>
+    </div>
+  </div>
+  <h5>{{products.length}} Products</h5>
+</nav>
+<!--__________________________________________________________________________-->
+
+<!--Product Grid-->
+<div class="container" id="product-grid-view">
+  <div class="row">
+
+   <div class="col-md-3 col-sm-6 col-6" *ngFor="let product of products">
+    <div class="product-grid">
+      <div class="product-image">
+        <a (click)="productDetails(product.id)" class="image img-responsive">
+          <img src="{{ product.mainImg}}" />
+        </a>
+      </div>
+      <h3 class="title"> <a (click)="productDetails(product.id)" >{{product.name}}</a></h3>
+      <div class="product-content">
+        <div class="product-category"><a href="">Clothing</a></div>
+        <div class="price">{{product.price}}</div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+<!--__________________________________________________________________________-->
+
+
+<!-- TESTIMONY OF THE CREATOR-->
+<div class="container d-flex align-items-center"  id="testimony">
+  <div class="d-flex row">
+  <div class="d-flex justify-content-center col-md-6 col-sm- col-">
+    <img
+      src="assets/img/profile.jpg"
+      alt="creator's image"
+      id="creatorImg"
+    />
+  </div>
+  <div class="d-flex flex-column justify-content-center col-md-6 col-sm- col-" id="testimony-content">
+    <div class="d-flex flex-column"id="testimony-para">
+      <h6>Hello, This is {{userData.name}}</h6>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br />
+        Perspiciatis nisi doloremque reprehenderit voluptatibus dicta <br />
+        ut quod sit fuga ratione odit error quos asperiores autem architecto
+        magnam.
+      </p>
+    </div>
+    <div class="d-flex justify-content-center">
+      <a class="social-media" href="//youtube.com" target="_blank"
+        ><img src="assets/img/brand_icons/icon_yt.png" alt="YouTube"
+      /></a>
+      <a class="social-media" href="//instagram.com" target="_blank"
+        ><img src="assets/img/brand_icons/icon_insta.png" alt="instagram"
+      /></a>
+      <a class="social-media" href="//facebook.com" target="_blank"
+        ><img src="assets/img/brand_icons/icon_fb.png" alt="facebook"
+      /></a>
+      <a class="social-media" href="//twitter.com" target="_blank"
+        ><img src="assets/img/brand_icons/icon_tw.png" alt="twitter"
+      /></a>
+      <a class="social-media" href="//twitch.com" target="_blank"
+        ><img src="assets/img/brand_icons/icon_twitch.png" alt="twitch"
+      /></a>
+    </div>
+  </div>
+</div>
+</div>

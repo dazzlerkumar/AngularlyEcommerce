@@ -1,0 +1,143 @@
+h6{
+  font-size: 1rem;
+}
+
+#cart-heading {
+  font-weight: 500;
+  letter-spacing: 0.01rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.product {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.product-img{
+  display: grid;
+
+}
+.product-img img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.img .product-name {
+  margin-left: 15px;
+  margin-right: auto;
+}
+
+/*Details about the product Name, Size and Color, this is spanning 8 cols*/
+.product-details{
+  width: 100%;
+}
+
+.numberspinner{
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  height: 24px;
+}
+
+.numberspinner span {
+  text-align: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.qty-btn{
+  margin: 0;
+  width: 24px;
+  height: auto;
+  text-align: center;
+}
+.qty-btn:active {
+  background-color: #ff6815;
+}
+
+.qty-btn1{
+  border-right: 1px solid #000;;
+}
+.qty-btn2{
+  border-left: 1px solid #000;;
+}
+
+.size-box {
+  margin: 10px;
+  width: 28px;
+  height: 24px;
+  padding: 2px;
+  border-radius: 3px;
+  border: 2px solid #7d7d7d;
+  color: #252525;
+  text-align: center;
+
+}
+.size-box h6{
+  margin:0;
+}
+
+.color-box {
+  margin: 10px;
+  height: 24px;
+  width: 24px;
+  border-radius: 3px;
+  background-color: blue;
+}
+.price{
+  display: grid;
+}
+.price p{
+  margin-left: auto;
+  font-weight: 600;
+}
+
+
+/*SUBTORAL AND TOTAL NUMBER SECTION*/
+hr {
+  width: 100%;
+  border-width: 1px;
+  box-shadow: 0 0 1px #252525;
+}
+.summary {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.summary-items{
+  justify-content: space-between;
+}
+.summary-items h5 {
+  margin-left: 12px;
+}
+
+.checkout-btn {
+  place-self: center;
+  margin: 20px 0 10px 0;
+  border-radius: 2px;
+  border-width: 2px;
+  border-color: #ff6815;
+  color: aliceblue;
+  background-color: rgba(255, 104, 21, 1);
+}
+
+#btn2:hover {
+  background-color: rgba(255, 104, 21, 0.7);
+}
+
+/*Mobile View*/
+
+@media (max-width: 786px){
+  #cart-heading{
+  display: grid;
+  justify-content: center;
+  font-size: 0.5rem;
+  }
+  .summary-items{
+    flex-direction: column;
+    align-items: center;
+  }
+  .checkout-btn{
+    margin: 5px;
+    width: 100%;
+
+  }
+}

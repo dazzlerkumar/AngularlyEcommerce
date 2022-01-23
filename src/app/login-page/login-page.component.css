@@ -1,0 +1,39 @@
+.logo{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.login-box{
+    width: 420px;
+    height: auto;
+    padding: 20px;
+    border: 3px solid #252525;
+}
+h3{
+    margin-bottom: 20px;
+}
+form{
+    width: 100%;
+}
+input{
+    width: 100%;
+    margin: 5px;
+    border-radius: 2px;
+}
+.btn{
+    margin: 5px 0 5px 5px;
+    border-radius: 2px;
+    border-width: 2px;
+    border-color: rgba(255, 104, 21,1) ;
+    background-color:rgba(255, 104, 21,1) ;
+}
+.btn:hover{
+    background-color:rgba(255, 104, 21,0.7) ;
+}
+.login-box p{
+    margin: 10px;
+}
+#logintext{
+    margin-left: 5px;
+    color: rgba(255, 104, 21,1) ;
+}

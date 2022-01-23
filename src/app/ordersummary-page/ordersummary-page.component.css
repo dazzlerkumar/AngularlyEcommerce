@@ -1,0 +1,139 @@
+.container {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+#address {
+  width: 100%;
+}
+#address .address-heading {
+  height: 30px;
+}
+.address-area {
+  margin-top: 0px;
+  padding: 7px;
+  background-color: #f8f8ff;
+  border-radius: 5px;
+  height: 100px;
+}
+
+#change-link {
+  color: #ff6815;
+}
+
+.coupon-section{
+  padding: 15px;
+}
+.coupon-section input {
+  height: 60px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.coupon-section button {
+  border-radius: 2px;
+  border-width: 2px;
+  border-color: #ff6815;
+  color: aliceblue;
+  background-color: rgba(255, 104, 21, 1);
+}
+
+.coupon-section button:hover {
+  background-color: rgba(255, 104, 21, 0.8);
+}
+
+/*___________________________________________________________________*/
+/*PRODUCT PREVIEW STARTS*/
+.product-view {
+    padding: 5px;
+}
+.products-box {
+  width: 100%;
+  height: auto;
+  border: 3px solid #000;
+  border-radius: 4px;
+  padding: 5px;
+
+}
+.products-box a {
+  text-decoration: none;
+}
+
+.product {
+  color: #000;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.img .product-name {
+  margin-left: 15px;
+  margin-right: auto;
+}
+.product-details {
+  margin-left: 15px;
+}
+.product-details p {
+    margin-bottom: 1px;
+  font-size: 13px;
+}
+.product-details p span{
+    margin-left: 2px;
+    font-weight: 500;
+  }
+  
+  .color-box {
+    height: 20px;
+    width: 20px;
+    border-radius: 3px;
+    background-color: blue;
+  }
+.price{
+    margin-left: auto;
+}
+.price p{
+    margin-top: auto;
+    margin-bottom: 0;
+}
+/*PRODUCT PREVIEW ENDS*/
+/*___________________________________________________________________*/
+/*PRICE PREVIEW STARTS*/
+.price-details{
+    margin-top: 10px;
+    padding: 2px;
+}
+.price-details h5{
+  margin: 8px 0 0 5px;
+}
+.invoice{
+    margin-top:15px;
+    margin: 5px;
+    padding: 10px;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #ffdfbf;
+}
+.price-details hr{
+    width: 100%;
+    margin: 0;
+    height: 0;
+    border: 2px solid #000;
+}
+
+
+
+.each-price span{
+    margin-left: auto;
+}
+
+.price-details button{
+    margin-top: auto;
+}
+.price-details button {
+  
+  border-radius: 2px;
+  border-width: 2px;
+  border-color: #ff6815;
+  color: aliceblue;
+  background-color: rgba(255, 104, 21, 1);
+}
+
+.price-details button:hover {
+  background-color: rgba(255, 104, 21, 0.8);
+}

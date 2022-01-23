@@ -1,0 +1,113 @@
+
+<div class="container d-flex align-items-center justify-content-center"  id="product-container">
+  <div class="row">
+    <div class="d-flex flex-column justify-content-center col-md-6" id="display-pic">
+      <div class="container-fluid d-flex justify-content-center" id="main-pic">
+        <div class="arrows">
+          <fa-icon  [icon]="left_arrow"></fa-icon>
+        </div>
+        <img
+          src="{{mainImg}}"
+          alt="main-image"
+        />
+        <div class="arrows">
+          <fa-icon  [icon]="right_arrow"></fa-icon>
+        </div>
+      </div>
+      <div class="container-fluid mini-pic-frame">
+        <img *ngFor="let minipic of miniImg" class="mini-pic" src="{{minipic}}" alt="" (click)="imgClick($event, minipic)"/>
+      </div>
+    </div>
+    <div class="container-fluid  d-flex flex-column justify-content-around col-md-6" id="details">
+      <div class="container-fluid caption">
+        <h2>{{productDetail.name}}</h2>
+        <h6>{{productDetail.name}}</h6>
+        <hr/>
+      </div>
+      <div class="price-section">
+        <h3>{{productDetail.price}}</h3>
+        <p>(inclusive of all taxes)</p>
+      </div>
+      <div class="color-select">
+        <div class="color-option">
+          <span class="color">SELECT COLOR</span>
+          <div class="color-boxes" >
+            <a 
+              *ngFor="let color of colorArr"
+              style="background-color: {{color}};"
+              class="btn btn-primary color-btn"
+              role="button"
+              data-bs-toggle="button"
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!--SIZE SECTION-->
+      <div class="size-select">
+        <div class="size-option">
+          <span class="size">SELECT SIZE</span>
+          <div class="size-boxes d-flex">
+            <div *ngFor="let sizeavailable of sizeArr" class="box"><h5>{{sizeavailable}}</h5></div>
+          </div>
+        </div>
+      </div>
+     
+      <div class="row button-div">
+        <button
+          class="btn btn-outline-danger btn-lg col-md-5 col-sm-12"
+          id="btn1"
+          type="button"
+          routerLink="/cart"
+        >
+          Buy Now
+        </button>
+        <span class="col-md-2"></span>
+        <button
+          class="btn btn-outline-danger btn-lg col-md-5 col-sm-12"
+          type="button"
+          routerLink="/cart"
+        >
+          Add to Cart
+        </button>
+      </div>
+      <div class="details-para">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+          nulla id asperiores, dolores deserunt eligendi illo reiciendis unde
+          accusantium voluptas labore. Quo beatae molestiae itaque fugit nemo
+          eius molestias impedit.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid d-flex flex-column align-items-center" id="featureDiv">
+  <h3 id="featProduct">YOU MAY ALSO LIKE</h3>
+  <div class="d-flex justify-content-center" id="featureImgs">
+    <a routerLink="/product-page">
+      <img
+        class="img-fluid featureImg"
+        src="assets/img/featureimg.png"
+        alt="featureImage01"
+      />
+      <br />
+    </a>
+    <a routerLink="/product-page">
+      <img
+        class=" img-fluid  featureImg"
+        src="assets/img/featureimg.png"
+        alt="featureImage02"
+      />
+      <br />
+    </a>
+    <a routerLink="/product-page">
+      <img
+        class="img-fluid  featureImg"
+        src="assets/img/featureimg.png"
+        alt="featureImage03"
+      />
+      <br />
+    </a>
+  </div>
+</div>
+

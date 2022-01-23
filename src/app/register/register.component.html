@@ -1,0 +1,17 @@
+<div class="container d-flex justify-content-center logo">
+    <img src="assets/img/logo.png" alt="">
+</div>
+
+<div class="container d-flex flex-column align-items-center login-box">
+    <h3>Create Account</h3>
+    <form>
+        <div class=" d-flex flex-column form-group col-md-12 justify-content-center">
+            <input [(ngModel)]="regUserData.name" name="name" type="text" class="form-control" id="inputname" placeholder="Name">
+            <input [(ngModel)]="regUserData.email" name="email" type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            <input [(ngModel)]="regUserData.password" name="password" type="password" class="form-control" id="inputPassword" placeholder="Password">
+            <input [(ngModel)]="regUserData.password1" name="password1" type="password" class="form-control" id="inputPassword1" placeholder="Confirm Password">
+        </div>
+        <button (click)="registerUser()" type="submit" class="btn btn-primary btn-block">Sign Up</button>
+    </form>
+    <p>Already have an account?<a href="" routerLink="/login"><span id="logintext">Log In</span></a></p>
+</div>

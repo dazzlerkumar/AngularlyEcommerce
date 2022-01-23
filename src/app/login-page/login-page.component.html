@@ -1,0 +1,39 @@
+<div class="container d-flex justify-content-center logo">
+  <img src="assets/img/logo.png" alt="" />
+</div>
+
+<div class="container d-flex flex-column align-items-center login-box">
+  <h3>Glad To See You Here!</h3>
+  <form>
+    <div class="d-flex flex-column form-group col-md-12 justify-content-center">
+      <input
+        [(ngModel)]="logUserData.email"
+        name="email"
+        type="email"
+        class="form-control"
+        id="inputEmail4"
+        placeholder="Enter Email"
+      />
+      <input
+        [(ngModel)]="logUserData.password"
+        name="password"
+        type="password"
+        class="form-control"
+        id="inputPassword"
+        placeholder="Enter Password"
+      />
+    </div>
+    <button
+      (click)="loginUser()"
+      type="submit"
+      class="btn btn-primary btn-block"
+    >
+      Log Me In
+    </button>
+  </form>
+  <p>
+    New to our community?<a href="" routerLink="/register"
+      ><span id="logintext">Join Us</span></a
+    >
+  </p>
+</div>

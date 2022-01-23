@@ -1,0 +1,9 @@
+<carousel>
+    <slide *ngFor="let car of carousel">
+      <img src="{{car.imageUrl}}" alt="first slide" style="display: block; width: 100%;">
+      <div class="carousel-caption d-none d-md-block">
+        <h3>{{car.name}}</h3>
+        <p>{{car.desc}}</p>
+      </div>
+    </slide>
+</carousel>

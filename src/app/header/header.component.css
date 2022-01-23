@@ -1,0 +1,90 @@
+ .navbar-brand, .nav-link, .dropdown-item{
+    color: #FFf;
+}
+.navbar-brand:hover, .nav-link:hover{
+    color: #FF6815;
+}
+/*
+ @media (min-width: 1200px)
+ .navbar{
+     max-width: 1352;
+ }
+ 
+ @media (min-width: 992px)
+ .navbar {
+     max-width: 960px;
+ }
+ @media (min-width: 768px)
+ .navbar {
+     max-width: 720px;
+ }
+ @media (min-width: 576px)
+ .navbar{
+     max-width: 540px;
+ }
+*/
+.navbar-brand{
+    margin-right: auto;
+    
+}
+.sticky-top{
+    position: sticky;
+}
+
+/*Toggle Button*/
+.bars{
+    color: #FF6815;
+}
+
+
+/*Search Bar*/
+.input {
+    padding: 10px;
+    width: 25px;
+    height: 25px;
+    background: none;
+    border: 2px solid #FFf;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-family: Comic Sans MS;
+    font-size: 16px;
+    color: #252525;
+    outline: none;
+    transition: .5s;
+}
+.box:hover input{
+    width: 120px;
+    background: #FF6815;
+    border-color: #FF6815;
+    opacity: 0.5;
+    border-radius: 5px;
+}
+.search-icon{
+    position: absolute;
+    font-size: 16px;
+    color: #FFF;
+    transform: translate(4px,-25px);    
+    transition: .2s;
+}
+
+.box:hover .search-icon{
+    opacity: 0;
+    z-index: -1;
+}
+
+.dropdown-menu{
+    background-color:rgba(255, 104, 21,0.7) ;
+}
+.dropdown-item:hover{
+    background-color: rgba(1,1, 1,0.5)
+}
+#navbarSupportedContent .btn{
+    margin: 5px 5px 5px 15px;
+    border-radius: 2px;
+    border-width: 2px;
+    color: #Fff;
+    background-color:rgba(255, 104, 21,1);
+}
+#navbarSupportedContent .btn:hover{
+    background-color:rgba(255, 104, 21,0.7) ;
+}

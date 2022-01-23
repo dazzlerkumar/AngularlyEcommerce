@@ -1,0 +1,118 @@
+<div class="container" id="cart-heading">
+  <h3>Shopping Cart</h3>
+</div>
+<!--Product REVIEW-->
+
+<!--Product REVIEW -1 -->
+<div class="container product">
+  <div class="row">
+    <!--______-->
+    <div class="col-2 justify-content-center product-img">
+      <img src="assets/img/cartimg1.png" alt="Product Image" />
+    </div>
+    <!--______-->
+    <div class="col-8 product-details">
+      <div class="container-fluid d-flex flex-column">
+
+        <h6 class="product-name">Some Random Quote T shirt</h6>
+        <div class="d-flex">
+          <div class="d-flex numberspinner">
+            <div class="qty-btn qty-btn1" (click)="subract()">-</div>
+            <span>{{ itemvalue }}</span>
+            <div  class="qty-btn qty-btn2" (click)="add()">+</div>
+          </div> 
+          <div class="color-box"></div>      
+          <div class="size-box"><h6>XS</h6></div>
+        </div>
+              </div>
+    </div>
+
+    <!--______-->
+    <div class="col-2 price ml-auto">
+      <p>$789</p>
+    </div>
+  </div>
+</div>
+
+<!--Product REVIEW -2 -->
+<div class="container product">
+  <div class="row">
+    <!--______-->
+    <div class="col-2 justify-content-center product-img">
+      <img src="assets/img/cartimg1.png" alt="Product Image" />
+    </div>
+    <!--______-->
+    <div class="col-8 product-details">
+      <div class="container-fluid d-flex flex-column">
+
+        <h6 class="product-name">Some Random Quote T shirt</h6>
+        <div class="d-flex">
+          <div class="d-flex numberspinner">
+            <div class="qty-btn qty-btn1" (click)="subract()">-</div>
+            <span>{{ itemvalue }}</span>
+            <div  class="qty-btn qty-btn2" (click)="add()">+</div>
+          </div> 
+          <div class="color-box"></div>      
+          <div class="size-box"><h6>XS</h6></div>
+        </div>
+              </div>
+    </div>
+
+    <!--______-->
+    <div class="col-2 price ml-auto">
+      <p>$789</p>
+    </div>
+  </div>
+</div>
+<!--Product REVIEW -3 -->
+<div class="container product">
+  <div class="row">
+    <!--______-->
+    <div class="col-2 justify-content-center product-img">
+      <img src="assets/img/cartimg1.png" alt="Product Image" />
+    </div>
+    <!--______-->
+    <div class="col-8 product-details">
+      <div class="container-fluid d-flex flex-column">
+
+        <h6 class="product-name">Some Random Quote T shirt</h6>
+        <div class="d-flex">
+          <div class="d-flex numberspinner">
+            <div class="qty-btn qty-btn1" (click)="subract()">-</div>
+            <span>{{ itemvalue }}</span>
+            <div  class="qty-btn qty-btn2" (click)="add()">+</div>
+          </div> 
+          <div class="color-box"></div>      
+          <div class="size-box"><h6>XS</h6></div>
+        </div>
+              </div>
+    </div>
+
+    <!--______-->
+    <div class="col-2 price ml-auto">
+      <p>$789</p>
+    </div>
+  </div>
+</div>
+
+<!--PRODUCT REVIEW SUMMARY-->
+<div class="container d-flex flex-column justify-content-center summary">
+  <hr />
+  <div class="d-flex summary-items">
+    <div class="d-flex">
+      <p>No. of Items:</p>
+      <h5>{{ total }}</h5>
+    </div>
+    <div class=" d-flex">
+      <p>Subtotal:</p>
+      <h5>{{ subtotal }}</h5>
+    </div>
+  </div>
+  <button
+    class="btn checkout-btn"
+    type="button"
+    routerLink="/address"
+  >
+    CHECKOUT
+  </button>
+</div>

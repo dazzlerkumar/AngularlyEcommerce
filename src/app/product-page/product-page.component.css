@@ -1,0 +1,213 @@
+#product-container {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+#main-pic {
+  margin: 0 0 5px 0;
+ 
+}
+#main-pic img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  object-fit:cover;
+}
+.mini-pic-frame {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  width: 100%;
+  height: 100px;
+}
+.mini-pic{
+  object-fit: cover;
+}
+
+.arrows {
+  display: none;
+}
+
+/*Display Images Styles for less than Medium Screen sizes*/
+@media (max-width: 768px) {
+  .mini-pic-frame {
+    display: none;
+  }
+  .arrows {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 5px 0 5px;
+    max-width: 16px;
+    height: auto;
+    color: #ff6815;
+  }
+}
+ .mini-pic {
+  max-width: 100px;
+  width: 100%;
+  height: auto;
+}
+
+.caption {
+  place-self: top;
+}
+#details h2 {
+  color: #252525;
+  letter-spacing: 0.02rem;
+}
+
+#details h6 {
+  color: #7d7d7d;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+#details hr {
+  margin-top: 0;
+}
+
+.price-section {
+  display: inline-flex;
+  padding-left: 15px;
+}
+
+.price-section h3 {
+  color: #252525;
+  font-weight: 400;
+  place-self: center;
+}
+.price-section p {
+  color: #7d7d7d;
+  font-weight: 200;
+  place-self: center;
+}
+
+/*COLOR SELECTION*/
+.color-option .color-btn {
+  border: 2px solid #7d7d7d;
+  width: 32px;
+  height: 32px;
+  margin: 5px;
+  border-radius: 2px;
+}
+
+/*FOR BOTH COLOR AND SIZE DIVISION*/
+.color-select,
+.size-select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+/*END of FOR BOTH COLOR AND SIZE DIVISION */
+
+.color-select .color-option .color {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.color-option .color-boxes {
+  margin-top: 8px;
+  display: flex;
+  justify-content: flex-start;
+}
+/*
+.color-option .color-boxes #blue {
+  background: #0071c7;
+}
+.color-option .color-boxes #ylw {
+  background: #f5da00;
+}
+.color-option .color-boxes #grn {
+  background: #00ac00;
+}
+.color-option .color-boxes #red {
+  background: #ff0000;
+}
+.color-option .color-boxes #black {
+  background: #000;
+}
+
+.color-option .color-boxes 
+#blue:hover,
+#ylw:hover,
+#grn:hover,
+#red:hover,
+#black:hover {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #ff6815;
+}
+*/
+/*Size Component*/
+.size-option .size-boxes {
+  margin-top: 8px;
+}
+.size-option .size-boxes .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 72px;
+  align-content: center;
+  border: 2px solid #7d7d7d;
+  border-radius: 5px;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  place-items: center;
+  
+}
+.size-option .size-boxes .box:hover {
+  background-color: rgba(255, 104, 21, 0.7);
+  border-color: #ff6815;
+  transition: all 0.4s ease;
+}
+
+.size-option .size-boxes .box h5 {
+  margin: 0;
+  color: #7d7d7d;
+}
+.red{
+  background-color: #ff6815;
+}
+.button-div {
+  margin: 20px;
+}
+.button-div .btn {
+  width: 100%;
+  border-radius: 2px;
+  border-width: 2px;
+  border-color: #ff6815;
+}
+
+#btn1 {
+  color: aliceblue;
+  background-color: rgba(255, 104, 21, 1);
+}
+#btn1:hover {
+  background-color: rgba(255, 104, 21, 0.7);
+}
+.btn:hover {
+  background-color: rgba(255, 104, 21, 0.7);
+}
+
+/*You May Also Like*/
+#featureDiv {
+  margin-top: 30px;
+}
+#featureDiv h3 {
+  margin: 10px;
+  letter-spacing: 0.2rem;
+}
+#featureImgs a {
+  margin: 10px;
+}
+
+.featureImg {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
