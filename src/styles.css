@@ -2,6 +2,9 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+body{
+  background-color:#F1EFFF;
+}
 /*
 @media screen and (min-width: 320px) {
   html {

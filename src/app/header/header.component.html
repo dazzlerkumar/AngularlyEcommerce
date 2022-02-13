@@ -1,57 +1,69 @@
 <nav class="navbar navbar-expand-lg">
-  <div class="container-inline">
-    <a class="navbar-brand" href="#" routerLink="">AngularlyEcommerce</a>
-  </div>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarSupportedContent"
-    aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"
-  >
-  <fa-icon class="bars" [icon]="bars"></fa-icon>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <div class="nav-item box ml-auto">
-      <form name="search">
-        <input
-          type="text"
-          class="input"
-          name="txt"
-          onmouseout="document.search.txt.value = ''"
-        />
-      </form>
-      <fa-icon class="search-icon" [icon]="fasearch"></fa-icon>
+    <div class="container-inline">
+        <a class="navbar-brand" href="#" routerLink="">AngularlyEcommerce</a>
     </div>
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#" routerLink="/cart">Cart</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a
-          class="nav-link dropdown-toggle"
-          href="#"
-          id="navbarDropdown"
-          role="button"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          More
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+    <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarToggleExternalContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+    >
+        <fa-icon class="bars" [icon]="bars"></fa-icon>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="nav-item box ml-auto">
+            <form name="search">
+                <input
+                    type="text"
+                    class="input"
+                    name="txt"
+                    onmouseout="document.search.txt.value = ''"
+                />
+            </form>
+            <fa-icon class="search-icon" [icon]="fasearch"></fa-icon>
         </div>
-      </li>
-      <button class="btn btn-sm" type="button" *ngIf="!_auth.loggedIn()" routerLink="/login">
-        Login
-      </button>
-      <button class="btn btn-sm" type="button" *ngIf="_auth.loggedIn()" routerLink="/login">
-        LogOut
-      </button>
-    </ul>
-  </div>
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#" routerLink="/cart">Cart</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                >
+                    More
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            <button
+                class="btn btn-sm"
+                type="button"
+                *ngIf="!_auth.loggedIn()"
+                routerLink="/login"
+            >
+                Login
+            </button>
+            <button
+                class="btn btn-sm"
+                type="button"
+                *ngIf="_auth.loggedIn()"
+                routerLink="/login"
+            >
+                LogOut
+            </button>
+        </ul>
+    </div>
 </nav>
